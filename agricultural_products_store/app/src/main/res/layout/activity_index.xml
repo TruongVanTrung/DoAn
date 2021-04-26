@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:weightSum="4"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_home"
+            android:text="Trang chủ"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/image_home"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_mess"
+            android:text="Tin nhắn"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/image_mess"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_cart"
+            android:text="Giỏ hàng"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/image_cart"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_me"
+            android:text="Tôi"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/image_person"></TextView>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm kiếm sản phẩm..."
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableRight="@drawable/image_search"
+        android:background="@drawable/edittext_search">
+    </EditText>
+</androidx.constraintlayout.widget.ConstraintLayout>
